@@ -1,8 +1,12 @@
 <script lang="ts">
+import Logo from "./Logo.svelte"
+
 export let name
 </script>
 
 <main>
+  <Logo />
+
   <h1>Hello {name}!</h1>
   <p>
     Visit the

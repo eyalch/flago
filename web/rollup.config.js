@@ -4,7 +4,7 @@ import typescript from "@rollup/plugin-typescript"
 import livereload from "rollup-plugin-livereload"
 import svelte from "rollup-plugin-svelte"
 import { terser } from "rollup-plugin-terser"
-import sveltePreprocess from "svelte-preprocess"
+import svelteOptions from "./svelte.config"
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -50,12 +50,7 @@ export default {
       css: (css) => {
         css.write("bundle.css")
       },
-      preprocess: sveltePreprocess({
-        defaults: {
-          script: "ts",
-          style: "scss",
-        },
-      }),
+      ...svelteOptions,
     }),
 
     // If you have external dependencies installed from

@@ -9,7 +9,6 @@
     "validate": "svelte-check"
   },
   "dependencies": {
-    "sass": "^1.26.11",
     "sirv-cli": "^1.0.0"
   },
   "devDependencies": {
@@ -17,6 +16,8 @@
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^6.0.0",
     "@tsconfig/svelte": "^1.0.0",
+    "postcss": "^8.1.1",
+    "postcss-load-config": "^2.1.2",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^6.0.0",
